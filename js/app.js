@@ -13,15 +13,15 @@ function init() {
     }
   } while (true);
 
-    if(arrayNum.length > 0)
-    {break;}
+  if (arrayNum.length > 0) {
+    return false;
+  }
 
   let sum = 0;
 
   for (const i of arrayNum) {
-      sum += arrayNum[i];
+    sum += arrayNum[i];
   }
 
   alert(`Общая сумма чисел равна ${sum}`);
-
 }
